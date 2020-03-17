@@ -6,9 +6,9 @@ namespace SubmarineSimulator
 {
     public class Crewmember : Human
     {
-        public Crewmember(double s)
+        public Crewmember(double s) : base(s)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

@@ -6,7 +6,7 @@ namespace SubmarineSimulator
 {
     public class Fuel : IStorable
     {
-        public int Amount { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Amount { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void HowMuchLeft()
         {

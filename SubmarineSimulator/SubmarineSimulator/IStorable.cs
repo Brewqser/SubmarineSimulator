@@ -10,7 +10,7 @@ namespace SubmarineSimulator
 {
     public interface IStorable
     {
-        int Amount { get; set; }
+        double Amount { get; set; }
 
         void HowMuchLeft();
     }

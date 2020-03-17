@@ -7,11 +7,11 @@ namespace SubmarineSimulator
     public abstract class Human
     {
         public static double MedianSalary = 100;
-        private System.Random random;
+        private Random rnd = new Random((int) DateTime.Now.Ticks);
 
         public Human(double s)
         {
-            throw new System.NotImplementedException();
+            this.Salary = s;
         }
 
         public double Salary

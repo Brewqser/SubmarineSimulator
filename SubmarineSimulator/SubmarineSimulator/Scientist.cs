@@ -6,9 +6,9 @@ namespace SubmarineSimulator
 {
     public class Scientist : Human
     {
-        public Scientist(double s)
+        public Scientist(double s) : base (s)
         {
-            throw new System.NotImplementedException();
+
         }
 
         public ScientificProbe myProbe

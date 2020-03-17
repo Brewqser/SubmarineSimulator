@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SubmarineSimulator
 {
-    public class Capitan : Human
+    public class Captain : Human
     {
-        public Capitan(double s)
+        public Captain(double s) : base(s)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
