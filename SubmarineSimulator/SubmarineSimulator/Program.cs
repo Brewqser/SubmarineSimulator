@@ -17,8 +17,10 @@ namespace SubmarineSimulator
             // construct submarine
             Submarine mySubmarine = new Submarine(myEngine, myPanel);
             mySubmarine.Recruit(4, 2);
+
             double cost = mySubmarine.RefillStocks(300.0, 100.0);
             // let's go!
+
             mySubmarine.Travel();
             // final station reached - buy some more supplies
             cost += mySubmarine.RefillStocks(50.0, 50.0);

@@ -6,16 +6,16 @@ namespace SubmarineSimulator
 {
     public abstract class Engine
     {
-        private Fuel fuel;
+        protected Fuel fuel;
 
         public Engine()
         {
-            throw new System.NotImplementedException();
+            fuel = new Fuel();
         }
 
-        public void CheckSupplies()
+        public virtual void CheckSupplies()
         {
-            throw new System.NotImplementedException();
+            fuel.HowMuchLeft();
         }
 
         public abstract void OneDayOfTravel();

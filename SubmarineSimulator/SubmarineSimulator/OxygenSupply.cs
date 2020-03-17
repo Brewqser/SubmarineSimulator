@@ -8,22 +8,16 @@ namespace SubmarineSimulator
     {
         public OxygenSupply(double capcity)
         {
-            throw new System.NotImplementedException();
+            MaxCapacity = capcity;
         }
 
-        public double MaxCapacity
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public double MaxCapacity { get; set; }
 
-        public double Amount { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Amount { get; set; }
 
         public void HowMuchLeft()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Oxygen supply: " + Amount);
         }
     }
 }

@@ -6,18 +6,18 @@ namespace SubmarineSimulator
 {
     public class Waste : IStorable
     {
-        private int name;
+        private string name;
 
         public Waste(string s)
         {
-            throw new System.NotImplementedException();
+            name = s;
         }
 
-        public double Amount { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Amount { get; set; }
 
         public void HowMuchLeft()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(name + " waste stored: " + Amount);
         }
     }
 }

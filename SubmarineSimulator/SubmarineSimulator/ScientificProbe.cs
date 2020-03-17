@@ -8,12 +8,12 @@ namespace SubmarineSimulator
     {
         public void Conserve()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Scientific probe ready");
         }
 
         public void GatherData()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("Gathering data...");
         }
     }
 }

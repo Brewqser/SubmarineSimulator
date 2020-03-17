@@ -6,11 +6,11 @@ namespace SubmarineSimulator
 {
     public class Fuel : IStorable
     {
-        public double Amount { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Amount { get; set; }
 
         public void HowMuchLeft()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Fuel supply: " + Amount);
         }
     }
 }

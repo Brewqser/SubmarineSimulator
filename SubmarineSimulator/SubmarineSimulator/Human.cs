@@ -6,12 +6,13 @@ namespace SubmarineSimulator
 {
     public abstract class Human
     {
-        public static double MedianSalary = 100;
-        private Random rnd = new Random((int) DateTime.Now.Ticks);
+        public static double MedianSalary = 100.0;
+        private Random random;
 
         public Human(double s)
         {
             this.Salary = s;
+            random = new Random((int)DateTime.Now.Ticks);
         }
 
         public double Salary
@@ -24,12 +25,12 @@ namespace SubmarineSimulator
 
         public int Breathe()
         {
-            throw new System.NotImplementedException();
+            return (int)(random.NextDouble() * 1000);
         }
 
         public double Eat()
         {
-            throw new System.NotImplementedException();
+            return (int)(random.NextDouble() * 5);
         }
     }
 }

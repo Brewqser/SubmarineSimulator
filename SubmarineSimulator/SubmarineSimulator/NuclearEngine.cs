@@ -10,22 +10,28 @@ namespace SubmarineSimulator
 
         public NuclearEngine()
         {
-            throw new System.NotImplementedException();
+            nuclearWaste = new Waste("Nuclear");
         }
 
         public override void OneDayOfTravel()
         {
-            throw new NotImplementedException();
+            fuel.Amount -= 10;
+            nuclearWaste.Amount += 1;
+            CheckSupplies();
         }
 
         public override double Refill(double amount)
         {
-            throw new NotImplementedException();
+            fuel.Amount += amount;
+            double cost = 25.0 * amount + 10.0 * nuclearWaste.Amount;
+            nuclearWaste.Amount = 0;
+            return cost;
         }
 
-        public void CheckSupplies()
+        public override void CheckSupplies()
         {
-            throw new System.NotImplementedException();
+            fuel.HowMuchLeft();
+            nuclearWaste.HowMuchLeft();
         }
     }
 }

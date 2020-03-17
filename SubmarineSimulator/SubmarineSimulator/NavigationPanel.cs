@@ -12,40 +12,39 @@ namespace SubmarineSimulator
 
         public NavigationPanel()
         {
-            throw new System.NotImplementedException();
+            ports = new List<Destination>();
+            travelDays = new List<int>();
+            currentNumber = 0;
+            TotalNumber = 0;
         }
 
-        public int TotalNumber
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public int TotalNumber { get; set; }
 
         public void Conserve()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Navigation panel ready");
         }
 
         public string NextDestination()
         {
-            throw new System.NotImplementedException();
+            return ports[currentNumber].Name;
         }
 
         public int DaysToNextDestination()
         {
-            throw new System.NotImplementedException();
+            return travelDays[currentNumber];
         }
 
         public void Arrived()
         {
-            throw new System.NotImplementedException();
+            currentNumber++;
         }
 
         public void AddPort(string name, int days)
         {
-            throw new System.NotImplementedException();
+            ports.Add(new Destination(name));
+            travelDays.Add(days);
+            TotalNumber++;
         }
     }
 }

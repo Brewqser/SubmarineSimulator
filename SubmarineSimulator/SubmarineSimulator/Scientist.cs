@@ -11,17 +11,11 @@ namespace SubmarineSimulator
 
         }
 
-        public ScientificProbe myProbe
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public ScientificProbe myProbe { get; set; }
 
         public void Work()
         {
-            throw new System.NotImplementedException();
+            myProbe.GatherData();
         }
     }
 }

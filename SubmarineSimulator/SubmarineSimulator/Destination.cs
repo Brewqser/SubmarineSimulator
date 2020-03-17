@@ -8,15 +8,9 @@ namespace SubmarineSimulator
     {
         public Destination(string name)
         {
-            throw new System.NotImplementedException();
+            Name = name;
         }
 
-        public string Name
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public string Name { get; set; }
     }
 }
